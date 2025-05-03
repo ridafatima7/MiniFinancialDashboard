@@ -1,12 +1,35 @@
-# React + Vite
+# Dashboard App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based dashboard that displays account data and transactions using routing and state management.
 
-Currently, two official plugins are available:
+## 🛠 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React Router for navigation
+- Sidebar and Topbar layout
+- Transaction Table with formatted date
+- Dynamic routing to account details
+- 404 Fallback route for invalid URLs
+- Styled with Tailwind CSS and custom UI components
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+Follow these instructions to run the project locally on your machine.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/dashboard-app.git
+
+cd dashboard-app
+npm install
+npm run dev
+
+2. Production Links
+
+   mini-financial-dashboard.vercel.app     // ------------vercel -------
+
+   https://minifinancialdashboard.netlify.app/    //-----------netlify---------
+
+
