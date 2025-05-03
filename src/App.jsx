@@ -1,9 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./Components/Dashboard";
 import AccountDetails from "./Components/AccountDetails";
-
-
-function App() {
+const App=() =>{
   return (
     <BrowserRouter>
       <Routes>
@@ -13,3 +11,4 @@ function App() {
     </BrowserRouter>
   );
 }
+export default App

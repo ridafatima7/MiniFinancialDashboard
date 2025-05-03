@@ -3,9 +3,12 @@ import axios from "axios";
 import AccountCard from "../Components/AccountCard";
 
 export default function Dashboard() {
-  const { data, isLoading } = useQuery(["accounts"], async () => {
-    const res = await axios.get("https://6810b5e927f2fdac24127ce7.mockapi.io/accounts");
-    return res.data;
+  const { data, isLoading } = useQuery({
+    queryKey: ["accounts"],
+    queryFn: async () => {
+      const res = await axios.get("https://6810b5e927f2fdac24127ce7.mockapi.io/accounts");
+      return res.data;
+    },
   });
 
   if (isLoading) return <div className="text-center p-8">Loading...</div>;
